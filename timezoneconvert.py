@@ -76,15 +76,6 @@ def convert2LOCAL(input_time,timezone):
 
 # local = "2017-12-1 22:52:16"
 
-def main():
-	if len(sys.argv) == 3:
-		local = sys.argv[1]+' '+sys.argv[2]
-		print 'convert2EST:%s' % convert2EST(local)
-		print 'convert2CST:%s' % convert2CST(local)
-		print 'convert2PST:%s' % convert2PST(local)
-		print 'convert2UTC:%s' % convert2UTC(local)
-		print 'convert2GMT:%s' % convert2GMT(local)
-
 if __name__ == "__main__":
 	timezone = ['UTC','GMT','PST','CST','LOCAL','EST']
 	parser = optparse.OptionParser("Usage: %prog [options] date time(like 2017-12-1 12:00:00)")
